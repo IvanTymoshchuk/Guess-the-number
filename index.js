@@ -31,19 +31,11 @@ refs.btnCheck.addEventListener("click", function (e) {
       highScore = score;
       refs.spanHighScore.textContent = score;
     }
-    // ---- TO HIGH -------
-  } else if (guessingNumber > secretNumber) {
+    // ----- NUMBER FROM INPUT IS WRONG  --------
+  } else if (guessingNumber !== secretNumber) {
     if (score > 1) {
-      refs.guessMessage.textContent = "High number!";
-      score--;
-      refs.score.textContent = score;
-    } else {
-      refs.guessMessage.textContent = "Game Over!";
-    }
-    // ------ TO LOW -----
-  } else if (guessingNumber < secretNumber) {
-    if (score > 1) {
-      refs.guessMessage.textContent = "Small number!";
+      refs.guessMessage.textContent =
+        guessingNumber > secretNumber ? "High number!" : "Small number!";
       score--;
       refs.score.textContent = score;
     } else {
