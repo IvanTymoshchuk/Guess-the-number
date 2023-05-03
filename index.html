@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  <title>Guess the number</title>
+</head>
+<body>
+
+  <!--  HEADER  -->
+  <header>
+    <h1>Guess the number</h1>
+    <p class="between">( Mead 1 and 20 )</p>
+    <button class="btn again">Initially</button>
+    <div class="question">???</div>
+  </header>
+
+<!-- MAIN -->
+<main>
+<section class="left">
+  <input type="number" class="number-input">
+  <button class="btn check">Verify</button>
+</section>
+
+
+<section class="right">
+  <p class="guess-message">Start guessing</p>
+  <p class="label-score">Point: <span class="score">20</span></p> 
+  <p class="label-highscore">Best result <span class="highscore">0</span></p>
+</section>
+</main>
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
